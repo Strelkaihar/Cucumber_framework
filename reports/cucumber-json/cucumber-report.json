@@ -1,0 +1,296 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "interaction-with-the-techglobal-training-frontend;validate-html-elements-card,-interact-with-text-inputs---choose-options-from-dropdown-menus",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Validate HTML Elements card, Interact with text inputs - Choose options from dropdown menus",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "user navigates to 'https://techglobal-training.com/frontend'",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "user click on the 'Html Elements' card",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user should see the 'Html Elements' page heading",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "the URL should contain 'elements'",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "user select \"Apple\" from the first dropdown menu",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 174000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user select \"Microsoft\" from the second dropdown menu",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "\"Apple\" should be the selected option in the first dropdown",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "\"Microsoft\" should be the selected option in the second dropdown",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 1
+          },
+          {
+            "name": "@Smoke",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "interaction-with-the-techglobal-training-frontend;validate-html-elements-card,-toggle-checkboxes-and-verify-the-state",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Validate HTML Elements card, Toggle checkboxes and verify the state",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "user navigates to 'https://techglobal-training.com/frontend'",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 527000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "user click on the 'Html Elements' card",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "user should see the 'Html Elements' page heading",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the URL should contain 'elements'",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 43,
+            "name": "user select the \"Microsoft\" checkbox",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 119000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "user deselect the \"Microsoft\" checkbox",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "the \"Microsoft\" checkbox should not be checked",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "user select the \"Apple\" and \"Tesla\" checkboxes",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "both \"Apple\" and \"Tesla\" checkboxes should be checked",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "the \"Microsoft\" checkbox remains unchecked",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 1
+          },
+          {
+            "name": "@HtmmlElements",
+            "line": 37
+          },
+          {
+            "name": "@Smoke",
+            "line": 37
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "interaction-with-the-techglobal-training-frontend",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Interaction with the TechGlobal Training Frontend",
+    "tags": [
+      {
+        "name": "@Regression",
+        "line": 1
+      }
+    ],
+    "uri": "cypress/features/techGlobal.feature"
+  }
+]

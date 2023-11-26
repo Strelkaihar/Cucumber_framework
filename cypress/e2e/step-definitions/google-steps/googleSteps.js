@@ -1,12 +1,13 @@
-const { When, Then } = require('@badeball/cypress-cucumber-preprocessor')
+const { When, Then  } = require('@badeball/cypress-cucumber-preprocessor')
 
 
-When('user search for {string}', (search) => {
-    cy.get('[name="q"]').type(search + '{enter}')
+When(/^user search for "([^"]*)"$/, (search) => {
+	cy.get('[name="q"]').type(search + '{enter}')
 })
 
+
 Then('user should see {string} in the URL', (url) => {
-    cy.url().should('include', url)
+    cy.url().should('include', url.replaceAll(' ', '_'))
 })
 
 Then('user should see {string} in the title', (title) => {

@@ -1,3 +1,4 @@
+@Regression
 Feature: Framework Test
 
     Feature Description

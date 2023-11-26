@@ -1,3 +1,4 @@
+@Regression
 Feature: Interaction with the TechGlobal Training Frontend
 
     @HtmlElements
@@ -11,7 +12,7 @@ Feature: Interaction with the TechGlobal Training Frontend
         When user click on the 'Sign in' button
         Then the text under it should be 'You clicked on “Sign in”'
 
-    @HtmlElements
+    @Smoke
     Scenario: Validate HTML Elements card, Interact with text inputs - Choose options from dropdown menus
         Given user navigates to 'https://techglobal-training.com/frontend'
         When user click on the 'Html Elements' card
@@ -22,7 +23,7 @@ Feature: Interaction with the TechGlobal Training Frontend
         Then "Apple" should be the selected option in the first dropdown
         And "Microsoft" should be the selected option in the second dropdown
 
-    @HtmlElements
+    @Input
     Scenario: Validate HTML Elements card, Interact with text inputs
         Given user navigates to 'https://techglobal-training.com/frontend'
         When user click on the 'Html Elements' card
@@ -33,7 +34,7 @@ Feature: Interaction with the TechGlobal Training Frontend
         Then the first text input field should contain "test input"
         And the second text input field should contain "another test input"
 
-    @HtmmlElements
+    @HtmmlElements @Smoke
     Scenario: Validate HTML Elements card, Toggle checkboxes and verify the state
         Given user navigates to 'https://techglobal-training.com/frontend'
         When user click on the 'Html Elements' card
@@ -59,6 +60,12 @@ Feature: Interaction with the TechGlobal Training Frontend
         Given user navigates to 'https://techglobal-training.com/frontend'
         When user click on the 'Project - Login Function' card
         Then user should see the "Project - Login Function" page heading
-        When user enter username as "TechGlobal" and password as "Test1234"
+        When user enter username as "<username>" and password as "<password>"
         And user click Login Button
-        Then user should see a "You are logged in" message
+        Then user should see a "<message>" message
+
+        Examples:
+            | username | password | message |
+            | johndoe    | 123456   | Invalid Username entered! |
+            | tomsmith   | 12345    | Invalid Username entered! |
+            | TechGlobal | Test1234 | You are logged in         |
